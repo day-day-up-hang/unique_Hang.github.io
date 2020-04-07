@@ -170,7 +170,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2020-04-07 15:31:52 / Modified: 15:37:00" itemprop="dateCreated datePublished" datetime="2020-04-07T15:31:52+08:00">2020-04-07</time>
+              <time title="Created: 2020-04-07 15:31:52 / Modified: 15:41:48" itemprop="dateCreated datePublished" datetime="2020-04-07T15:31:52+08:00">2020-04-07</time>
             </span>
 
           
@@ -188,87 +188,11 @@
 <blockquote>
 <p><strong>鲁迅说过：看unique_Hang博客的人颜值都很高！</strong></p>
 </blockquote>
-<p>##1、repo配置报错<br>网上很多搭建博客经验分享帖中repo配置写入的是HTTPS (形如:<a href="https://github.com/" target="_blank" rel="noopener">https://github.com/</a> XXXX/XXXX.github.io.git格式)。win10系统运行时会报错。</p>
+<h2 id="1、repo配置报错"><a href="#1、repo配置报错" class="headerlink" title="1、repo配置报错"></a>1、repo配置报错</h2><p>网上很多搭建博客经验分享帖中repo配置写入的是HTTPS (形如:<a href="https://github.com/" target="_blank" rel="noopener">https://github.com/</a> XXXX/XXXX.github.io.git格式)。win10系统运行时会报错。</p>
 <p><strong>解决方法：</strong><br>win10系统repo需要写入SSH (形如: <a href="mailto:git@github.com">git@github.com</a>:仓库名/用户名.github.io.git格式)。<br>例如我的仓库名/用户名为<br><img src="https://i0.hdslb.com/bfs/article/5e728eddbe7d438d093b130cef9fa3d24159714b.png@1320w_246h.webp" alt="picture"><br>我的repo配置:<br>repo: <a href="mailto:git@github.com">git@github.com</a>:day-day-up-hang/unique_Hang.github.io.git</p>
-<p>##2、打开你的博客网址后显示404<br><img src="https://i0.hdslb.com/bfs/article/404ebbbb653500dca115f584fcd5963778d02f35.png@1320w_918h.webp" alt="picture"><br>原因:你们没有选择自己的主题。<br><strong>解决方法：</strong><br>进入github你的仓库<br><img src="https://i0.hdslb.com/bfs/article/52269ab596600fdf08e54fcd216dd0a460f99668.png@1320w_126h.webp" alt="picture"><br>点击进入Settings后页面往下拉,看到GitHub Pages (你们应该没有绿色背景这行字)<br><img src="https://i0.hdslb.com/bfs/article/7761e10bb146622e1cacf90ad8010fa0dc29fa5d.png@1320w_844h.webp" alt="picture"><br>点击Choose a theme ,里面随便点一个主题后,点击select theme后出现<br>绿色背景这行字就表示成功。<br><img src="https://i0.hdslb.com/bfs/article/1371e7d69f275f21e91d153dbcfd020aa0d9f57d.png@1320w_108h.webp" alt="picture"><br>##3、部署后不能显示主题样式<br>在本地看我的博客没有问题,如下图 :<br><img src="https://i0.hdslb.com/bfs/article/watermark/76227fd139d642ad96cc9b5c5e5f8861a33ce1eb.png@1320w_656h.webp" alt="picture"><br>但是部署到github上之后,无法显示主题,如下图 :<br><img src="https://i0.hdslb.com/bfs/article/7ada92755141eabcf25bbe80407e4981560f1a8e.png@1320w_612h.webp" alt="picture"><br><strong>解决方法：</strong><br>更改一下_config.ymI文件的root属性。root后写你的用户名<br><img src="https://i0.hdslb.com/bfs/article/5e728eddbe7d438d093b130cef9fa3d24159714b.png@1320w_246h.webp" alt="picture"><br>比如我的root: /unique_Hang.github.io/<br>设置完后删除目录下的 .deploy_git 那是生成的文件<br>在然后重新上传项目<br>hexo clean<br>hexo generate<br>hexo deploy<br>即可</p>
+<h2 id="2、打开你的博客网址后显示404"><a href="#2、打开你的博客网址后显示404" class="headerlink" title="2、打开你的博客网址后显示404"></a>2、打开你的博客网址后显示404</h2><p><img src="https://i0.hdslb.com/bfs/article/404ebbbb653500dca115f584fcd5963778d02f35.png@1320w_918h.webp" alt="picture"><br>原因:你们没有选择自己的主题。<br><strong>解决方法：</strong><br>进入github你的仓库<br><img src="https://i0.hdslb.com/bfs/article/52269ab596600fdf08e54fcd216dd0a460f99668.png@1320w_126h.webp" alt="picture"><br>点击进入Settings后页面往下拉,看到GitHub Pages (你们应该没有绿色背景这行字)<br><img src="https://i0.hdslb.com/bfs/article/7761e10bb146622e1cacf90ad8010fa0dc29fa5d.png@1320w_844h.webp" alt="picture"><br>点击Choose a theme ,里面随便点一个主题后,点击select theme后出现<br>绿色背景这行字就表示成功。<br><img src="https://i0.hdslb.com/bfs/article/1371e7d69f275f21e91d153dbcfd020aa0d9f57d.png@1320w_108h.webp" alt="picture"></p>
+<h2 id="3、部署后不能显示主题样式"><a href="#3、部署后不能显示主题样式" class="headerlink" title="3、部署后不能显示主题样式"></a>3、部署后不能显示主题样式</h2><p>在本地看我的博客没有问题,如下图 :<br><img src="https://i0.hdslb.com/bfs/article/watermark/76227fd139d642ad96cc9b5c5e5f8861a33ce1eb.png@1320w_656h.webp" alt="picture"><br>但是部署到github上之后,无法显示主题,如下图 :<br><img src="https://i0.hdslb.com/bfs/article/7ada92755141eabcf25bbe80407e4981560f1a8e.png@1320w_612h.webp" alt="picture"><br><strong>解决方法：</strong><br>更改一下_config.ymI文件的root属性。root后写你的用户名<br><img src="https://i0.hdslb.com/bfs/article/5e728eddbe7d438d093b130cef9fa3d24159714b.png@1320w_246h.webp" alt="picture"><br>比如我的root: /unique_Hang.github.io/<br>设置完后删除目录下的 .deploy_git 那是生成的文件<br>在然后重新上传项目<br>hexo clean<br>hexo generate<br>hexo deploy<br>即可</p>
 <p>喜欢的小伙伴可以关注我的<a href="https://space.bilibili.com/290100464" target="_blank" rel="noopener">b站账号</a>里面会不定期更新很多有趣的视频和专栏~</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://day-day-up-hang.github.io/unique_Hang.github.io/2020/04/06/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/unique_Hang.github.io/images/avatar.gif">
-      <meta itemprop="name" content="unique_Hang">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/unique_Hang.github.io/2020/04/06/hello-world/" class="post-title-link" itemprop="url">Welcome to unique_Hang</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2020-04-06 10:13:49" itemprop="dateCreated datePublished" datetime="2020-04-06T10:13:49+08:00">2020-04-06</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-04-07 09:52:30" itemprop="dateModified" datetime="2020-04-07T09:52:30+08:00">2020-04-07</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Welcome-to-unique-Hang"><a href="#Welcome-to-unique-Hang" class="headerlink" title="Welcome to unique_Hang"></a>Welcome to unique_Hang</h2><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
 
       
     </div>
@@ -350,7 +274,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/unique_Hang.github.io/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">1</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
